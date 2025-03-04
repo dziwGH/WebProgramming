@@ -1,0 +1,35 @@
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    width: 200px;
+    text-align: center;
+    color: aliceblue;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    
+}
+
+button {
+display: inline-block;
+outline: none;
+cursor: pointer;
+font-weight: 500;
+border: 1px solid transparent;
+border-radius: 2px;
+height: 36px;
+line-height: 34px;
+font-size: 14px;
+color: #ffffff;
+background-color: #007c89;
+transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+padding: 0 18px;
+}
+button:hover {
+    color: #ffffff;
+    background-color: #006570;
+}
