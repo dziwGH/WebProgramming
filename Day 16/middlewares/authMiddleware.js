@@ -4,5 +4,5 @@ const authMiddleware = (req,res,next) => {
         next(); //proceed
     } else {
         res.status(401).send({error: 'Unauthorized access'});
-    }
+    };
 };

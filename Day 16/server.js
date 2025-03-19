@@ -1,6 +1,6 @@
 // import modules
 const express = require('express');
-const loggerMiddleware = require('./middleware/loggerMiddleware');
+const loggerMiddleware = require('./middlewares/loggerMiddleware');
 const apiRoutes = require('./routes/api');
 
 const app = express();
@@ -17,5 +17,10 @@ app.use('/api', apiRoutes);
 app.use((err, req, res, next) => {
     console.log(err.message);
     res.status(500).send({error: 'Internal Sever Error'});
+});
+
+// start server
+app.listen(PORT, () => {
+    console.log(`Sever running on http://localhost:${PORT}`);
 });
 
