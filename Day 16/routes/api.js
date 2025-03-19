@@ -13,9 +13,9 @@ router.get('/protected', authMiddleware, (req,res) => {
     res.send({message : 'Welcome to the Protected API!'});
 });
 
-/*router.get('./error', (req,res,next) => {
+router.get('./error', (req,res,next) => {
     const error = new Error('Something went wrong!');
     next(error);
-});*/
+});
 
 module.exports=router;

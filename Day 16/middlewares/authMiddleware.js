@@ -6,3 +6,5 @@ const authMiddleware = (req,res,next) => {
         res.status(401).send({error: 'Unauthorized access'});
     };
 };
+
+module.exports = authMiddleware;

@@ -23,4 +23,3 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`Sever running on http://localhost:${PORT}`);
 });
-
