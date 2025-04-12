@@ -7,8 +7,8 @@ console.log("Loaded PG config:", {
   });
 
 const express = require('express');
-const {Pool} = require("pg");
-const cors = require("cors");
+const {Pool} = require('pg');
+const cors = require('cors');
 
 const PORT = 3000;
 const app = express();
@@ -42,7 +42,7 @@ app.get('/personal', async (req, res) => {
 
 app.get('/hobbies', async (req, res) => {
     try {
-        const result = await personalDB.query('SELECT * FROM hobbies');
+        const result = await hobbiesDB.query('SELECT * FROM hobbies');
         res.json(result.rows);
     } catch(err) {
         console.error(err.message);

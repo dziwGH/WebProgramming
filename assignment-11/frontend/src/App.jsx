@@ -1,14 +1,15 @@
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Hobbies from './hobbies';
 import Personal from './Personal';
+import './App.css';
 
 function App() {
   return (
     <Router>
       <div>
         <nav>
-          <Link to="/">Personal Info</Link>
-          <Link to="/">Hobbies</Link>
+          <Link to="/personal">Personal Info</Link>
+          <Link to="/hobbies">Hobbies</Link>
         </nav>
         <Routes>
           <Route path="/personal" element={<Personal />} />
