@@ -1,10 +1,5 @@
 require('dotenv').config();
 
-console.log("Loaded PG config:", {
-    user: process.env.PG_USER,
-    password: process.env.PG_PASSWORD ? "✅" : "❌ undefined!",
-    db: process.env.HOBBIES_DB_NAME
-  });
 
 const express = require('express');
 const {Pool} = require('pg');
