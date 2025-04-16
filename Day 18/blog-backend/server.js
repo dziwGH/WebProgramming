@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 
 // Middleware 
 app.use(cors());
@@ -45,6 +45,45 @@ app.post('/posts', async (req, res) => {
         res.json(newPost);
     }catch(err) {
         res.status(500).json({message: 'Failed to save post!'});
+    }
+});
+
+app.delete('/posts/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const deletedPost = await Post.findByIdAndDelete(id);
+
+        if (!deletedPost) {
+            return res.status(404).json({ message: 'Post not found' });
+        }
+
+        res.json({ message: 'Post deleted successfully', post: deletedPost });
+    } catch (err) {
+        res.status(500).json({ message: 'Failed to delete post' });
+    }
+});
+
+// put update
+
+app.put('/posts/:id', async (req, res) => {
+    try {
+        const {id} = req.params;
+        const {title, body} = req.body;
+
+        const updatedPost = await Post.findByIdAndUpdate(
+            id,
+            {title, body},
+            {new:true} // return the updated post
+        );
+
+        if (!updatedPost) {
+            return res.status(404).json({message: 'Post not found'});
+        }
+
+        res.json(updatedPost);
+
+    }catch (err) {
+        res.status(500).json({message: 'Failed to update post'});
     }
 });
 
