@@ -1,5 +1,6 @@
 @import "tailwindcss";
 body {
+<<<<<<< HEAD
     background-color: #284b63;
     font-family: 'Tinos', serif;
 }
@@ -16,4 +17,7 @@ footer {
     color: white;
     text-align: center;
     margin-bottom: 10px;
+=======
+    background-color: #3c6e71;
+>>>>>>> 3ce47e1483d55ba4b9ce3177fa845cb0914bb9d8
 }
