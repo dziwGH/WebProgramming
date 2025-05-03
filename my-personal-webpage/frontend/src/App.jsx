@@ -3,13 +3,13 @@ import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Skills from './pages/Skills.jsx';
 import Contact from './pages/Contact.jsx';
-import './App.css'
+import './tailwind.css'
 
 function App() {
   return (
     <Router>
-      <div className="max-w-6xl mx-auto p-4 bg-[#3c6e71]">
-        <nav className="p-4 bg-[#284b63] flex justify-center gap-4 rounded-lg mb-8 items-center text-xl font-semibold text-[#d9d9d9]">
+      <div className="mx-auto p-4 bg-[#284b63]">
+        <nav className="p-4 bg-[#353535] flex justify-center gap-4 rounded-lg items-center text-xl font-semibold text-[#ffffff]">
           <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/skills">Skills</Link>

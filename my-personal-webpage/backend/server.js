@@ -1,6 +1,12 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+
+// define routes
+import projectRoutes from './routes/projects.js';
+import educationRoutes from './routes/education.js';
+import skillRoutes from './routes/skills.js';
+import contactRoutes from './routes/contacts.js';
 
 const app = express();
 const PORT = 5000;
@@ -9,8 +15,8 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-// connect to mongo db
 
+// connect to mongo db
 mongoose.connect('mongodb://localhost:27017/blogDB', { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
