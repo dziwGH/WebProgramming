@@ -3,9 +3,9 @@ import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 function SocialLinks() {
   return (
-    <div className="flex justify-center gap-6 mt-8 text-white text-4xl">
+    <div className="flex justify-center gap-6 mt-8 mb-8 text-white text-4xl">
       <a 
-        href="https://www.linkedin.com/in/" 
+        href="https://www.linkedin.com/in/andrew-dziwanowski-b5b077229/" 
         target="_blank" 
         rel="noopener noreferrer"
         className="hover:text-blue-400 transition"
@@ -21,7 +21,7 @@ function SocialLinks() {
         <FaGithub />
       </a>
       <a 
-        href="https://www.instagram.com/your-username" 
+        href="https://www.instagram.com/dziw_a" 
         target="_blank" 
         rel="noopener noreferrer"
         className="hover:text-pink-400 transition"
