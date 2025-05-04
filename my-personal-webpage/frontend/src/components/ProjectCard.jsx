@@ -1,13 +1,19 @@
-function ProjectCard({ project }) {
-    return (
-      <div className="bg-white rounded-lg shadow-lg p-4">
-        <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-md mb-4" />
-        <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-        <p className="text-gray-700 mb-4">{project.description}</p>
-        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500">View Project</a>
-      </div>
-    );
-  }
-  
-  export default ProjectCard;
-  
+function ProjectCard({ title, description, technologies, githubUrl }) {
+  return (
+    <div className="bg-[#353535] text-[#FFFFFF] p-4 rounded-lg shadow-md hover:shadow-lg transition w-full md:w-1/2 lg:w-1/3">
+      <h2 className="text-xl font-bold mb-2">{title}</h2>
+      <p className="mb-2">{description}</p>
+      <p className="mb-2 text-sm text-[#d9d9d9]">Tech: {technologies.join(', ')}</p>
+      <a 
+        href={githubUrl} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-[#3c6e71] hover:underline"
+      >
+        Github
+      </a>
+    </div>
+  );
+}
+
+export default ProjectCard;

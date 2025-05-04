@@ -17,7 +17,7 @@ app.use(express.json());
 
 
 // connect to mongo db
-mongoose.connect('mongodb://localhost:27017/blogDB', { 
+mongoose.connect('mongodb://localhost:27017/personal_webpageDB', { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log('MongoDB Connected'))

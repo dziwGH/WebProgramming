@@ -10,7 +10,7 @@ function Home() {
                     </h1>
                 </div>
                 <img 
-                    src="/src/assets/Prof_Headshot.jpeg" 
+                    src="/public/assets/Prof_Headshot.jpeg" 
                     alt="Professional Headshot"
                     className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full shadow-lg"
                 />

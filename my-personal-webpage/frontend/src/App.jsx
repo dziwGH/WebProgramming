@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Skills from './pages/Skills.jsx';
+import Education from './pages/Education.jsx';
 import Contact from './pages/Contact.jsx';
 import './tailwind.css'
 
@@ -13,6 +14,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/skills">Skills</Link>
+          <Link to="/education">Education</Link>
           <Link to="/contact">Contact</Link>
         </nav>
         
@@ -20,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         
