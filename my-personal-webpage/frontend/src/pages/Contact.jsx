@@ -42,7 +42,7 @@ function Contact() {
         <div>
           <label className="block mb-1 font-semibold" htmlFor="name">Name</label>
           <input
-            className="w-full p-2 rounded bg-[#2a2a2a] border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full p-2 rounded bg-[#353535] border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#3c6e71]"
             type="text"
             name="name"
             id="name"
@@ -54,7 +54,7 @@ function Contact() {
         <div>
           <label className="block mb-1 font-semibold" htmlFor="email">Email</label>
           <input
-            className="w-full p-2 rounded bg-[#2a2a2a] border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full p-2 rounded bg-[#353535] border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#3c6e71]"
             type="email"
             name="email"
             id="email"
@@ -66,7 +66,7 @@ function Contact() {
         <div>
           <label className="block mb-1 font-semibold" htmlFor="message">Message</label>
           <textarea
-            className="w-full p-2 h-32 rounded bg-[#2a2a2a] border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full p-2 h-32 rounded bg-[#353535] border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#3c6e71]"
             name="message"
             id="message"
             value={formData.message}
@@ -76,7 +76,7 @@ function Contact() {
         </div>
         <button
           type="submit"
-          className="w-full bg-[#284b63] hover:bg-[#3c6e71] text-white font-semibold py-2 rounded transition duration-300"
+          className="w-full bg-[#284b63] hover:bg-[#3c6e71] text-white font-semibold py-2 rounded transition duration-200"
         >
           Send Message
         </button>
