@@ -21,7 +21,7 @@ Your directory structure should look just like it does in this Respository. Insi
 
 Next, you should open your terminal or command prompt and change directories to the backend by typing: `cd my-personal-webpage/backend`. Of course, if you called your project something else you will need to change the directory name.
 
-Now you should be able to install all the required libraries by using the `npm instal` command.
+Now you should be able to install all the required libraries by using the `npm install` command.
 
 If you have not already, you should create  a `.gitignore` from this [website](https://www.toptal.com/developers/gitignore). This project uses react, so look up that language and copy and paste the output into a `.gitignore` file.
 
