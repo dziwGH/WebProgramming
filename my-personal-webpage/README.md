@@ -1,6 +1,6 @@
 # Web Programming Final Project
 
-This is the final project for my Spring 2025 Web Programming class taught by Dr. Bhaskar Ghosh.
+This is the final project for my Spring 2025 Web Programming class taught by Dr. Bhaskar Ghosh. It was made to serve as a working protfolio for my experience and learning here at Arkansas Tech University.
 
 ## How to set up the Project:
 
@@ -42,6 +42,10 @@ You can now CTRL + Click on `http://localhost:5173` and it will redirect you to 
 ## Images
 
 All the images should come from the `frontend` directory and the `frontend/public` directory.
+
+## Features
+
+The main features of this webpage is the card elements implemented in the education, skills, and projects tabs. It also includes a contact form that will store the responses in my database.
 
 
 ## For information about React and Vite, use the following information
