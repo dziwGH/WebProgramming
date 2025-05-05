@@ -17,23 +17,36 @@ You will need to install:
 
 Your directory structure should look just like it does in this Respository. Inside of the parent directory (my-personal-webpage), you will need a 'backend' and a 'frontend'.
 
+## Set up Backend and .gitignore
+
 Next, you should open your terminal or command prompt and change directories to the backend by typing: `cd my-personal-webpage/backend`. Of course, if you called your project something else you will need to change the directory name.
 
 Now you should be able to install all the required libraries by using the `npm instal` command.
 
-If you have not already, you should create `.gitignore`
+If you have not already, you should create  a `.gitignore` from this [website](https://www.toptal.com/developers/gitignore). This project uses react, so look up that language and copy and paste the output into a `.gitignore` file.
+
+Once you are in the backend, you should run `nodemon ./server.js` to get the server running. It should output `MongoDB Connected` and `Backend running on http://localhost:5000` to the terminal.
+
+## Set up Frontend
+
+You should now open up a new terminal tab or window and change to the frontend directory by sending a `cd my-personal-webpage/frontend` command. IT IS IMPORTANT YOU SET UP THE BACKEND FIRST.
+
+Next, you will install the frontend dependencies using the `npm install` command.
+
+After that you can run `npm run dev` to start the frontend which should output `Local: http://localhost:5173`
+
+## Site is running
+
+You can now CTRL + Click on `http://localhost:5173` and it will redirect you to the running website in your browser.\
+
+## Images
+
+All the images should come from the `frontend` directory and the `frontend/public` directory.
 
 
+## For information about React and Vite, use the following information
 
-
-
-
-
-
-
-
-
-
+This page was created using Vite with the React JS framework. The following information came by default.
 
 
 
